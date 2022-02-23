@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 
 const port = process.env.PORT;
-const hostname = 'localhost';
+// const hostname = 'localhost';
 const home = fs.readFileSync('./index.html','utf-8');
 
 const server = http.createServer((req, res) => {
@@ -22,5 +22,5 @@ const server = http.createServer((req, res) => {
 })
 
 server.listen(port, hostname,() =>{
-    console.log(`Server is running on http://${hostname}:${port}`);
+    console.log(`Server is running .....`);
 });
